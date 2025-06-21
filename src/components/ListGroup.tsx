@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Button from "./Button";
 
 interface Props {
   items: string[];
@@ -31,12 +32,14 @@ function ListGroup({ items, heading, onSelectItem }: Props) {
           </li>
         ))}
       </ul>
-      <button
-       className="btn btn-primary"
-       onClick={() => setSelectedIndex(-1)}
-       >
-        Remove
-      </button>
+      
+    <div className="mt-3">
+     <Button
+     onClick={()=> {
+      setSelectedIndex(-1);
+     }}
+     >Remove</Button>
+    </div>
     </>
   );
 }
