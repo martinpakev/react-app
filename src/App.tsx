@@ -17,7 +17,7 @@ const handleSelectItem = (item:string) =>{
      <div>
       {alertVisible && <Alert onClose={() => setAlertVisability(false)}>My alert</Alert>}
       <Button color="secondary" onClick={() => setAlertVisability(true)} > Exercise</Button>
-      <ListGroup items={items} heading="Citites" onSelectItem={handleSelectItem}/>
+      <ListGroup items={items} heading="Cities" onSelectItem={handleSelectItem}/>
      </div>
   ) 
     
