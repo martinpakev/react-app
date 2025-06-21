@@ -31,6 +31,12 @@ function ListGroup({ items, heading, onSelectItem }: Props) {
           </li>
         ))}
       </ul>
+      <button
+       className="btn btn-primary"
+       onClick={() => setSelectedIndex(-1)}
+       >
+        Remove
+      </button>
     </>
   );
 }
